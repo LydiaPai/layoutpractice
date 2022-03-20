@@ -69,58 +69,63 @@ void main() {
     crossAxisSpacing: 20,
     mainAxisSpacing: 20,
     physics: BouncingScrollPhysics(),
+    // children: <Widget>[
+    //   Container(
+    //     alignment: Alignment.center,
+    //     color: Colors.blue,
+    //   ),
+    //   Container(
+    //     alignment: Alignment.center,
+    //     color: Colors.yellow,
+    //   ),
+    //   Container(
+    //     alignment: Alignment.center,
+    //     color: Colors.red,
+    //   ),
+    //   Container(
+    //     alignment: Alignment.center,
+    //     color: Colors.black12,
+    //   ),
+    //   Container(
+    //     alignment: Alignment.center,
+    //     color: Colors.white,
+    //   ),
+    //   Container(
+    //     alignment: Alignment.center,
+    //     color: Colors.purple,
+    //   ),
+    // ],
+
+
     children: <Widget>[
       Container(
+        child: Text('Snoopy', style: TextStyle(fontSize: 20),),
+        alignment: Alignment.center,
+        color: Colors.brown,
+      ),
 
-        alignment: Alignment.center,
-        color: Colors.blue,
-      ),
-      Container(
+      Image.network("http://2.bp.blogspot.com/-r54Xs4Qj_HA/T7m2AKiB31I/AAAAAAAAAEI/TiWN3RG6y7s/s320/967288_07.jpg"),
 
-        alignment: Alignment.center,
-        color: Colors.yellow,
-      ),
-      Container(
+      Image.network("https://upload.wikimedia.org/wikipedia/zh/c/c8/Snoopy%28The_Peanuts%29.jpg"),
 
-        alignment: Alignment.center,
-        color: Colors.red,
-      ),
-      Container(
+      Image.network("https://upload.wikimedia.org/wikipedia/zh/3/38/Charlie_Brown%28The_Peanuts%29.png"),
 
-        alignment: Alignment.center,
-        color: Colors.black12,
-      ),
-      Container(
+      Image.network("https://pic.pimg.tw/brook1958/1590043694-3791858210.png"),
 
-        alignment: Alignment.center,
-        color: Colors.white,
-      ),
-      Container(
-        alignment: Alignment.center,
-        color: Colors.purple,
-      ),
+      Image.network("https://pic.pimg.tw/brook1958/1590043650-2059283375.jpg"),
+
+
+
     ],
   );
+
+
   var app = MaterialApp(
     home: Scaffold(
       appBar: appBar,
       body: appBody,
     ),
   );
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   runApp(app);
 }
